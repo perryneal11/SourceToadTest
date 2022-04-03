@@ -1,0 +1,53 @@
+
+.App {
+  display: flex;
+  flex-direction: row;
+  flex: 3
+}
+.space {
+  flex: 2;
+  background-color: white;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: stretch;
+  font-size: 100px;
+
+}
+
+.top {
+  background-color:#1C1C1C;
+  color: white;
+  flex: 2;
+  text-align: right;
+  font-size: 100px;
+
+
+}
+
+
+.row{
+  align-items: stretch;
+  flex: 4;
+  display: flex;
+  background-color: gray;
+
+}
+
+.button {
+  display: block;
+  flex: 1;
+  font-size: 100px;
+}
+
+.big_button {
+  flex: 2
+}
+
+.last_button {
+  background-color: #FF9500;
+
+}
