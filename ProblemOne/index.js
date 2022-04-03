@@ -71,7 +71,8 @@ function mutateArray(a) {
 
     });
     
-    return a;
+    b = a.filter(element => element.guest_type == 'guest')
+    return b;
 }
 
 $(document).ready(function() {
