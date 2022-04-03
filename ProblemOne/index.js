@@ -72,7 +72,28 @@ function mutateArray(a) {
     });
     
     b = a.filter(element => element.guest_type == 'guest')
-    return b;
+
+
+    c = b.sort(function(a, b) {
+      var lastNameA = a.last_name.toUpperCase(); // ignore upper and lowercase
+      var lastNameB = b.last_name.toUpperCase();
+      var firstNameA = a.first_name.toUpperCase();
+      var firstNameB = b.first_name.toUpperCase();
+      
+      // ignore upper and lowercase
+      if (lastNameA <= lastNameB && firstNameA < firstNameB) {
+        return -1;
+      }
+      if (lastNameA > lastNameB && firstNameA > firstNameB) {
+        return 1;
+      }
+    
+      // names must be equal
+      return 0;
+    });
+
+
+    return c;
 }
 
 $(document).ready(function() {
