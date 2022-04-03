@@ -56,6 +56,10 @@ var arr = [
 ];
 
 function mutateArray(a) {
+
+    a.forEach(element => {
+      element.guest_booking = element.guest_booking.some_array
+    });
     return a;
 }
 
