@@ -56,10 +56,19 @@ var arr = [
 ];
 
 function mutateArray(a) {
+    var sum = 0
 
     a.forEach(element => {
       element.some_array = element.guest_booking.some_array
-      delete element.guest_booking 
+      delete element.guest_booking
+      
+      element.some_array.forEach(element => {
+        sum = sum + element
+      })
+
+      element.some_total = sum
+      delete element.some_array
+
     });
     
     return a;
