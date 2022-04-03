@@ -58,8 +58,10 @@ var arr = [
 function mutateArray(a) {
 
     a.forEach(element => {
-      element.guest_booking = element.guest_booking.some_array
+      element.some_array = element.guest_booking.some_array
+      delete element.guest_booking 
     });
+    
     return a;
 }
 
