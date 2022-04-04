@@ -71,7 +71,7 @@ function App() {
   }, [previousNum]);
 
 
-  //break
+  //break ova
   return (
     <div className="App">
       <div className="space"></div>
